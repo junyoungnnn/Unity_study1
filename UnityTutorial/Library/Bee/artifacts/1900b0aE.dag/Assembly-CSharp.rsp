@@ -357,7 +357,9 @@
 "Assets/Animator/Scripts/Player.cs"
 "Assets/Animator/Sport Car - 3D model/Scripts/CameraScript.cs"
 "Assets/Animator/Sport Car - 3D model/Scripts/LightEffects.cs"
+"Assets/Move/Scripts/PlayerController.cs"
 "Assets/UGUI/Scripts/MainMenu.cs"
+"Assets/UGUI/Scripts/TextManager.cs"
 -langversion:9.0
 
 /deterministic
