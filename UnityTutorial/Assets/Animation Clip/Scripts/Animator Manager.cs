@@ -39,4 +39,15 @@ public class AnimatorManager : MonoBehaviour
             }
         }
     }
+
+    public void Open()
+    {
+        animator.gameObject.SetActive(true);
+    }
+
+    public void Close()
+    {
+        animator.SetTrigger("Close");
+    }
+    
 }
