@@ -6,7 +6,11 @@ public class PlayerController : MonoBehaviour
 {
     public Vector3 direction;
     public float speed = 5f;
-   
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
 
     void Update()
     {
