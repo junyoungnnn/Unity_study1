@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/UGUI/Scenes/MainMenu.unity
+- path: Assets/Animation Clip/Scence/Animation Clip Example.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
