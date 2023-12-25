@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Sound/Scence/Sound Example.unity
+- path: Assets/Instantiate/Scence/Instantiate Example.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

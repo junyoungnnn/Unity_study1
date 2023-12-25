@@ -359,6 +359,7 @@
 "Assets/Animator/Scripts/Player.cs"
 "Assets/Animator/Sport Car - 3D model/Scripts/CameraScript.cs"
 "Assets/Animator/Sport Car - 3D model/Scripts/LightEffects.cs"
+"Assets/Instantiate/Scripts/Spawn Manager.cs"
 "Assets/Move/Scripts/PlayerController.cs"
 "Assets/Sound/Scripts/AudioManager.cs"
 "Assets/Sound/Scripts/Drone.cs"
