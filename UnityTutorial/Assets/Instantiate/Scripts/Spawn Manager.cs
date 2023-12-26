@@ -40,13 +40,9 @@ public class SpawnManager : MonoBehaviour
     //    factory.CreateUnit(listUnits[Random.Range(0,listUnits.Count)]);
     //}
 
-    private void Start()
+    protected virtual void Start()
     {
         StartCoroutine(CreateRoutime());
-
-    
-
-        Debug.Log("Hello World");
 
         // UseFactory();
 
