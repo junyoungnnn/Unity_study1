@@ -6,7 +6,8 @@ public enum State
 {
     Move,
     Attack,
-    Die
+    Die,
+    None
 }
 
 
@@ -22,6 +23,8 @@ public abstract class Unit : MonoBehaviour
     [SerializeField] Vector3 targetDirection;
 
     [SerializeField] float speed = 5.0f;
+
+    [SerializeField] Sound sound = new Sound();
 
     private void Awake()
     {
@@ -71,9 +74,17 @@ public abstract class Unit : MonoBehaviour
         animator.SetBool("Attack", true);
     }
 
+    public void AttackSound()
+    {
+        SoundManager.instance.Sound(sound.audioClips[0]);
+    }
+
     public virtual void Die()
     {
+        animator.Play("Die");
+        SoundManager.instance.Sound(sound.audioClips[1]);
 
+        state = State.None;
     }
 
     // 객체는 여러 곳에서 생성될 수 있는데, 호출하는 쪽이 객체의 생성자에

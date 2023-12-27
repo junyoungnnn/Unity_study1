@@ -17092,6 +17092,10 @@ MonoBehaviour:
   direction: {x: 0, y: 0, z: 0}
   targetDirection: {x: 0, y: 0, z: 0}
   speed: 5
+  sound:
+    audioClips:
+    - {fileID: 8300000, guid: 7946477466e381241b9b9cf32d695f99, type: 3}
+    - {fileID: 8300000, guid: 1d38a58a3709c5c45a53a41932a81c95, type: 3}
 --- !u!136 &2239923119855948225
 CapsuleCollider:
   m_ObjectHideFlags: 0

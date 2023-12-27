@@ -2,17 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public class Sound
+{
+    public AudioClip[] audioClips;
+}
+
+
 public class SoundManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    [SerializeField] AudioSource bgmSource;
+    [SerializeField] AudioSource sfxSource;
+
+    public static SoundManager instance = null;
+    
+    void Awake()
     {
-        
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            //Destroy(gameObject);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Sound(AudioClip audioClip)
     {
-        
+        // PlayOneShot : 동시에 여러 위치에서 사운드를 호출하는 함수입니다.
+        sfxSource.PlayOneShot(audioClip);
     }
+
 }
