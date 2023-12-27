@@ -360,6 +360,7 @@
 "Assets/Animator/Sport Car - 3D model/Scripts/CameraScript.cs"
 "Assets/Animator/Sport Car - 3D model/Scripts/LightEffects.cs"
 "Assets/Instantiate/Scripts/Factory.cs"
+"Assets/Instantiate/Scripts/Mouse.cs"
 "Assets/Instantiate/Scripts/Spawn Manager.cs"
 "Assets/Instantiate/Scripts/Unit/Sorceress.cs"
 "Assets/Instantiate/Scripts/Unit/Unit.cs"

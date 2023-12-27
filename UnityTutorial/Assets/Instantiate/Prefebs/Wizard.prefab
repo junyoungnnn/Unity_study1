@@ -17063,7 +17063,7 @@ Animator:
   m_GameObject: {fileID: 1000013586557078}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: be5995a9158bda9459c22d48acd79a3f, type: 3}
-  m_Controller: {fileID: 9100000, guid: 700d9bf6b23d6c7478ef89bf23dd2558, type: 2}
+  m_Controller: {fileID: 22100000, guid: 20e58e7bfc45bff4d91f5d7af7154dda, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -17086,8 +17086,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a83c0ac5b15e5640bdb7daf18c39825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 0
+  animator: {fileID: 95000012058624550}
   target: {fileID: 0}
   direction: {x: 0, y: 0, z: 0}
+  targetDirection: {x: 0, y: 0, z: 0}
   speed: 5
 --- !u!136 &2239923119855948225
 CapsuleCollider:
