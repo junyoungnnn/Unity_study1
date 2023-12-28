@@ -15,7 +15,7 @@ C:/Users/IDBLAB/Desktop/Unity_study1/UnityTutorial
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64524
+65502
 Successfully changed project path to: C:/Users/IDBLAB/Desktop/Unity_study1/UnityTutorial
 C:/Users/IDBLAB/Desktop/Unity_study1/UnityTutorial
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/IDBLAB/Desktop/Unity_study1/UnityTutorial
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [12828] Host "[IP] 203.247.166.182 [Port] 0 [Flags] 2 [Guid] 1821790246 [EditorId] 1821790246 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-QLOGQ7G) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [19648] Host "[IP] 203.247.166.182 [Port] 0 [Flags] 2 [Guid] 512442037 [EditorId] 512442037 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-QLOGQ7G) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [12828] Host "[IP] 203.247.166.182 [Port] 0 [Flags] 2 [Guid] 1821790246 [EditorId] 1821790246 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-QLOGQ7G) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [19648] Host "[IP] 203.247.166.182 [Port] 0 [Flags] 2 [Guid] 512442037 [EditorId] 512442037 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-QLOGQ7G) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
-Refreshing native plugins compatible for Editor in 7.82 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 6.79 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.14f1 (eff2de9070d8)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.14f1/Editor/Data/Resources/UnitySubsystems
@@ -70,46 +70,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.14f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.14f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.14f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56164
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56960
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.14f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.14f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.009460 seconds.
-- Loaded All Assemblies, in  0.322 seconds
+Registered in 0.008779 seconds.
+- Loaded All Assemblies, in  0.363 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.229 seconds
-Domain Reload Profiling: 550ms
-	BeginReloadAssembly (95ms)
+- Finished resetting the current domain, in  0.248 seconds
+Domain Reload Profiling: 611ms
+	BeginReloadAssembly (101ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (31ms)
+	RebuildCommonClasses (33ms)
 	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (56ms)
-	LoadAllAssembliesAndSetupDomain (129ms)
-		LoadAssemblies (93ms)
+	initialDomainReloadingComplete (57ms)
+	LoadAllAssembliesAndSetupDomain (160ms)
+		LoadAssemblies (99ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (127ms)
-			TypeCache.Refresh (126ms)
-				TypeCache.ScanAssembly (113ms)
+		AnalyzeDomain (158ms)
+			TypeCache.Refresh (156ms)
+				TypeCache.ScanAssembly (143ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (229ms)
+	FinalizeReload (249ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (176ms)
+		SetupLoadedEditorAssemblies (192ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (10ms)
 			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (116ms)
-			ProcessInitializeOnLoadMethodAttributes (44ms)
+			ProcessInitializeOnLoadAttributes (127ms)
+			ProcessInitializeOnLoadMethodAttributes (47ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -117,8 +117,8 @@ Domain Reload Profiling: 550ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.549 seconds
-Refreshing native plugins compatible for Editor in 2.92 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.574 seconds
+Refreshing native plugins compatible for Editor in 2.43 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -126,109 +126,48 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.491 seconds
-Domain Reload Profiling: 1037ms
-	BeginReloadAssembly (132ms)
+- Finished resetting the current domain, in  0.498 seconds
+Domain Reload Profiling: 1071ms
+	BeginReloadAssembly (142ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (19ms)
-	RebuildCommonClasses (30ms)
+		CreateAndSetChildDomain (23ms)
+	RebuildCommonClasses (35ms)
 	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (39ms)
-	LoadAllAssembliesAndSetupDomain (335ms)
-		LoadAssemblies (255ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (346ms)
+		LoadAssemblies (260ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (156ms)
-			TypeCache.Refresh (137ms)
-				TypeCache.ScanAssembly (123ms)
+		AnalyzeDomain (166ms)
+			TypeCache.Refresh (147ms)
+				TypeCache.ScanAssembly (133ms)
 			ScanForSourceGeneratedMonoScriptInfo (13ms)
 			ResolveRequiredComponents (4ms)
-	FinalizeReload (491ms)
+	FinalizeReload (499ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (358ms)
+		SetupLoadedEditorAssemblies (361ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (7ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (52ms)
-			ProcessInitializeOnLoadAttributes (270ms)
-			ProcessInitializeOnLoadMethodAttributes (19ms)
-			AfterProcessingInitializeOnLoad (7ms)
+			BeforeProcessingInitializeOnLoad (53ms)
+			ProcessInitializeOnLoadAttributes (272ms)
+			ProcessInitializeOnLoadMethodAttributes (20ms)
+			AfterProcessingInitializeOnLoad (6ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (6ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 2.55 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 2.45 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3116 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 32 unused Assets / (57.1 KB). Loaded Objects now: 3601.
-Memory consumption went from 137.0 MB to 136.9 MB.
-Total: 2.829300 ms (FindLiveObjects: 0.265700 ms CreateObjectMapping: 0.283600 ms MarkObjects: 2.176700 ms  DeleteObjects: 0.102400 ms)
+Memory consumption went from 137.0 MB to 137.0 MB.
+Total: 2.919400 ms (FindLiveObjects: 0.371400 ms CreateObjectMapping: 0.255100 ms MarkObjects: 2.185900 ms  DeleteObjects: 0.106000 ms)
 
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1127994.994374 seconds.
-  path: Assets/Instantiate/Fantasy Monster(wizard) Demo/READ ME(wizard)/003.png
-  artifactKey: Guid(1283613db66bc60409e0989253adebd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Instantiate/Fantasy Monster(wizard) Demo/READ ME(wizard)/003.png using Guid(1283613db66bc60409e0989253adebd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7098d9023329edaadd9e9ae653fee589') in 0.054907 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Instantiate/Fantasy Monster(wizard) Demo/READ ME(wizard)/001.png
-  artifactKey: Guid(3f99b693cdca0bf42915364af9052841) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Instantiate/Fantasy Monster(wizard) Demo/READ ME(wizard)/001.png using Guid(3f99b693cdca0bf42915364af9052841) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8e934d97e6b2c32acc0c4522c58486c') in 0.022723 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Instantiate/Fantasy Monster(wizard) Demo/Materials/ground_for demo.mat
-  artifactKey: Guid(d584889588f2b6840a6b076aa0a1d663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Instantiate/Fantasy Monster(wizard) Demo/Materials/ground_for demo.mat using Guid(d584889588f2b6840a6b076aa0a1d663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40313e842c5cd180318130b3c981ec66') in 0.089417 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Instantiate/Fantasy Monster(wizard) Demo/Fbx/wizard DEMO.FBX
-  artifactKey: Guid(be5995a9158bda9459c22d48acd79a3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Instantiate/Fantasy Monster(wizard) Demo/Fbx/wizard DEMO.FBX using Guid(be5995a9158bda9459c22d48acd79a3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '923a2263108234f27288e4b11625f7e8') in 0.074122 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 146
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Instantiate/Fantasy Monster(wizard) Demo/Materials/wizard_weapon_01 DEMO.mat
-  artifactKey: Guid(a267b501b822a7a4d8ad643ea81e410a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Instantiate/Fantasy Monster(wizard) Demo/Materials/wizard_weapon_01 DEMO.mat using Guid(a267b501b822a7a4d8ad643ea81e410a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61ba0362f0a1b96dad4fbab8db18b577') in 0.095516 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 2.62 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 0 unused Assets / (0 B). Loaded Objects now: 3650.
-Memory consumption went from 91.3 MB to 91.3 MB.
-Total: 3.423400 ms (FindLiveObjects: 0.261200 ms CreateObjectMapping: 0.265800 ms MarkObjects: 2.883500 ms  DeleteObjects: 0.012300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -244,94 +183,65 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 37.770772 seconds.
-  path: Assets/Stylize Water Texture/Materials/Stylize Sand diffuse.mat
-  artifactKey: Guid(437c98accab50fa478467c7edc177411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylize Water Texture/Materials/Stylize Sand diffuse.mat using Guid(437c98accab50fa478467c7edc177411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efcdbfcbfde2aca88b8da80892b6e9d2') in 0.094531 seconds
+  Time since last request: 1132226.242515 seconds.
+  path: Assets/Charactor Select/Scence
+  artifactKey: Guid(e5a0d690bc5a6ba40b06fa3a773ef069) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Charactor Select/Scence using Guid(e5a0d690bc5a6ba40b06fa3a773ef069) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea556260a9506b4ef7abccb9b54ea29b') in 0.001565 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 11.500651 seconds.
+  path: Assets/Charactor Select/Scence/Title.unity
+  artifactKey: Guid(3b031358921f2184497a0910285f8d64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Charactor Select/Scence/Title.unity using Guid(3b031358921f2184497a0910285f8d64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51f61d64e82d29a56d573d30f6e13b71') in 0.000423 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 18.532086 seconds.
+  path: Assets/Charactor Select/Scripts
+  artifactKey: Guid(f3610609c2fa873478ee0f9a66e5e927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Charactor Select/Scripts using Guid(f3610609c2fa873478ee0f9a66e5e927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f9dd55c8a206e586ed42f0190e75d74') in 0.000424 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 496.759577 seconds.
+  path: Assets/Charactor Select/Sprite
+  artifactKey: Guid(778610172d7342842b706ad30b15fb55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Charactor Select/Sprite using Guid(778610172d7342842b706ad30b15fb55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99d22983188de40a074934e0c0edc4d7') in 0.000591 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 3.822210 seconds.
+  path: Assets/Charactor Select/Sprite/sea-84629_1920.jpg
+  artifactKey: Guid(e25e8ff717593464d820f241233c5e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Charactor Select/Sprite/sea-84629_1920.jpg using Guid(e25e8ff717593464d820f241233c5e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '629b185df12e2b218e659b40a310a913') in 0.059370 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Stylize Water Texture/Materials/Stylized Stones.mat
-  artifactKey: Guid(55a512382d8a87e48bf3bb9092ecbf4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylize Water Texture/Materials/Stylized Stones.mat using Guid(55a512382d8a87e48bf3bb9092ecbf4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3816926843ed06cf310ddf83822d351e') in 0.231200 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 5.228413 seconds.
-  path: Assets/Sound/Sound/Signal Sound.mp3
-  artifactKey: Guid(4b3cc3d579e5a6444b01a6e45874efc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sound/Sound/Signal Sound.mp3 using Guid(4b3cc3d579e5a6444b01a6e45874efc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec57d41783a241ece35c09dff0e852ad') in 0.039922 seconds
+  Time since last request: 6.252949 seconds.
+  path: Assets/Charactor Select/Sprite/Sea.jpg
+  artifactKey: Guid(e25e8ff717593464d820f241233c5e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Charactor Select/Sprite/Sea.jpg using Guid(e25e8ff717593464d820f241233c5e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34cedf459b7d54201c0dcf858f4e5940') in 0.014716 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 11.031296 seconds.
-  path: Assets/Instantiate/Fantasy Monster(wizard) Demo/Textures/wizard_01_ao DEMO.png
-  artifactKey: Guid(2e6d39dacb9776149b50c39904930f2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Instantiate/Fantasy Monster(wizard) Demo/Textures/wizard_01_ao DEMO.png using Guid(2e6d39dacb9776149b50c39904930f2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c38cfe7886e55cf7f15a830895da0377') in 0.019140 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000089 seconds.
-  path: Assets/Instantiate/Fantasy Monster(wizard) Demo/Textures/wizard_addon_01_metalic.tga
-  artifactKey: Guid(dcc86a764a88dc842b5b8329538e73ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Instantiate/Fantasy Monster(wizard) Demo/Textures/wizard_addon_01_metalic.tga using Guid(dcc86a764a88dc842b5b8329538e73ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f92a69f53afe7f48e3d79de81fc8960') in 0.047043 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Instantiate/Fantasy Monster(wizard) Demo/Textures/wizard_weapon_01_ao.png
-  artifactKey: Guid(fc03c3180e1ae7c46b2d72bbbc2e09d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Instantiate/Fantasy Monster(wizard) Demo/Textures/wizard_weapon_01_ao.png using Guid(fc03c3180e1ae7c46b2d72bbbc2e09d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c29cee6a0a779962838d3bc25eebb289') in 0.022110 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Instantiate/Fantasy Monster(wizard) Demo/Textures/wizard_weapon_01_nor DEMO.png
-  artifactKey: Guid(a4889e6fb0a6c8e4fb1d2c0570464445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Instantiate/Fantasy Monster(wizard) Demo/Textures/wizard_weapon_01_nor DEMO.png using Guid(a4889e6fb0a6c8e4fb1d2c0570464445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c12751c0cbe5e208ac1c311f264d6838') in 0.175524 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 16.390810 seconds.
-  path: Assets/Animation Clip/Texture/Question.png
-  artifactKey: Guid(8de7bfb8abc5b9e49869b889aef15917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation Clip/Texture/Question.png using Guid(8de7bfb8abc5b9e49869b889aef15917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9086bc57ebbf952782f715e1b39ef87e') in 0.031631 seconds
+  Time since last request: 17.121145 seconds.
+  path: Assets/Charactor Select/Sprite/Sea.jpg
+  artifactKey: Guid(e25e8ff717593464d820f241233c5e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Charactor Select/Sprite/Sea.jpg using Guid(e25e8ff717593464d820f241233c5e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c7add7b218164fd937629a958575fae') in 0.061869 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 13.577794 seconds.
-  path: Assets/Stylize Water Texture/Textures/NewLayer 2.terrainlayer
-  artifactKey: Guid(e27850c520503b947be8e9d1d4385c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylize Water Texture/Textures/NewLayer 2.terrainlayer using Guid(e27850c520503b947be8e9d1d4385c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df582d29d6530148da681654a348b147') in 0.042638 seconds
+  Time since last request: 152.673602 seconds.
+  path: Assets/Charactor Select/Render Texture
+  artifactKey: Guid(a6ee670b938ee7c48b5705b4fbbd4e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Charactor Select/Render Texture using Guid(a6ee670b938ee7c48b5705b4fbbd4e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9c5ca6bb50b59fa0ad2941349a4bf66') in 0.000467 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Stylize Water Texture/Textures/Vol_36_5_Base_Color.png
-  artifactKey: Guid(aa701e5be2dbcd24aad4fb9c3ca284da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylize Water Texture/Textures/Vol_36_5_Base_Color.png using Guid(aa701e5be2dbcd24aad4fb9c3ca284da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dc247d07a0246bcb02476d2a39a903e') in 0.030080 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Stylize Water Texture/Textures/Vol_36_5_Ambient_Occlusion.png
-  artifactKey: Guid(5e3b47c76d4c55d44be834515b7fe551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stylize Water Texture/Textures/Vol_36_5_Ambient_Occlusion.png using Guid(5e3b47c76d4c55d44be834515b7fe551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '501a4ca91f9b2400317b3a0b4cb0c131') in 0.039799 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: 스레드 종료 또는 응용 프로그램 요청 때문에 I/O 작업이 취소되었습니다.
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Number of asset objects unloaded after import = 0
