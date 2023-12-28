@@ -10,25 +10,36 @@ public enum State
     None
 }
 
+// 자동으로 컴포넌트를 넣어줌
+[RequireComponent(typeof(HPBar))]
 
 public abstract class Unit : MonoBehaviour
 {
+    [SerializeField] GameObject target;
+
     [SerializeField] State state;
 
     [SerializeField] Animator animator;
-
-    [SerializeField] GameObject target;
 
     [SerializeField] Vector3 direction;
     [SerializeField] Vector3 targetDirection;
 
     [SerializeField] float speed = 5.0f;
 
+    [SerializeField] protected float health;
+    [SerializeField] protected float maxHealth;
+
+    [SerializeField] HPBar healthBar;
     [SerializeField] Sound sound = new Sound();
+
+    // 몬스터가 죽었을때 체력바가 남아있는 문제
+    // Release()는 어디서 호출되는가?
+
 
     private void Awake()
     {
         target = GameObject.Find("Player");
+        healthBar = GetComponent<HPBar>();
         animator = GetComponent<Animator>();
     }
 
@@ -47,6 +58,28 @@ public abstract class Unit : MonoBehaviour
         }
 
     }
+    public void OnHit(float damage)
+    {
+        if (health <= 0)
+        {
+            return;
+        }
+
+        health -= damage;
+
+        healthBar.UpdateHP(health, maxHealth);
+
+        if (health <= 0)
+        {
+            state = State.Die;
+        }
+    }
+
+    public virtual void Release()
+    {
+        Destroy(gameObject);
+    }
+
     public virtual void Move()
     {
         animator.SetBool("Attack", false);
@@ -57,7 +90,7 @@ public abstract class Unit : MonoBehaviour
 
         // 2. y축을 0으로 설정합니다.
         direction.y = 0;
-        direction.y = 0;
+        targetDirection.y = 0;
 
         // 3. 벡터의 정규화
         direction.Normalize();
@@ -97,7 +130,6 @@ public abstract class Unit : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         state = State.Attack;
-
     }
 
     // OnTriggerStay() : Trigger 충돌 중일 때 이벤트를 호출하는 함수입니다.
@@ -111,4 +143,6 @@ public abstract class Unit : MonoBehaviour
     {
         state = State.Move;
     }
+
+   
 }

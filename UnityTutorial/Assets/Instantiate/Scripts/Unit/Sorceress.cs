@@ -4,5 +4,11 @@ using UnityEngine;
 
 public class Sorceress : Unit
 {
- 
+    public void Start()
+    {
+        health = 30;
+        maxHealth = health;
+
+        Debug.Log(health);
+    }
 }
