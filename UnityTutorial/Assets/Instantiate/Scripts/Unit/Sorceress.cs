@@ -8,7 +8,6 @@ public class Sorceress : Unit
     {
         health = 30;
         maxHealth = health;
-
         Debug.Log(health);
     }
 }
