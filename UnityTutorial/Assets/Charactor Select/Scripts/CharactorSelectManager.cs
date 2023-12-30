@@ -4,37 +4,45 @@ using UnityEngine;
 
 public class CharactorSelectManager : MonoBehaviour
 {
-    [SerializeField] int selectCount;
-    [SerializeField] List<GameObject> charactorList;
+    [SerializeField] List<GameObject> characterList;
 
     private void Start()
     {
-        charactorList.Capacity = 5;
+        characterList.Capacity = 5;
         Show();
     }
     private void Show()
     {
-        for (int i = 0; i < charactorList.Count; i++)
+        for (int i = 0; i < characterList.Count; i++)
         {
-            charactorList[i].SetActive(false);
+            characterList[i].SetActive(false);
+        }
+        
+        characterList[DataManager.instance.SelectCount].SetActive(true);
+    }
+
+    public void OnLeftButton()
+    {
+        DataManager.instance.SelectCount--;
+
+        if(DataManager.instance.SelectCount < 0)
+        {
+            DataManager.instance.SelectCount = characterList.Count - 1;
         }
 
-        charactorList[selectCount].SetActive(true);
+        Show();
     }
 
-    void Update()
+    public void OnRightButton()
     {
-        
-    }
+        DataManager.instance.SelectCount++;
 
-    public void Left()
-    {
+        if(DataManager.instance.SelectCount >= characterList.Count)
+        {
+            DataManager.instance.SelectCount = 0;
+        }
 
-    }
-
-    public void Right()
-    {
-
+        Show();
     }
 
     

@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Charactor Select/Scence/Title.unity
+- path: Assets/Physics/Scences/Physics.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
