@@ -1,14 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class SpawnManager : MonoBehaviour
 {
-    //   [0]         [1]
-    // 소서리스     마법사
-    [SerializeField] List<Unit> listUnits;
-    // [SerializeField] Transform createPosition;
-    [SerializeField] Factory factory;
+    // [SerializeField] Transform createPosition
 
     //[Tooltip("몬스터를 생성하는 변수")]
     //[SerializeField] int createCount = 5;
@@ -21,13 +19,14 @@ public class SpawnManager : MonoBehaviour
         {
             // Random.Range(0, listUnits.Count);
             // 0 ~ 최댓값 -1 의 값을 반환하는 함수입니다.
-            factory.CreateUnit(listUnits[Random.Range(0, listUnits.Count)]);
+
+            ObjectPool.instance.GetObject();       
 
             // new WaitForSeconds(5f) : 특정한 시간동안 코루틴을 대기합니다.
-            yield return new WaitForSeconds(5f);
+            yield return new WaitForSeconds(3.5f);
         }
     }
-
+        
     public IEnumerator LogRoutine()
     {
         yield return new WaitForSeconds(1f);

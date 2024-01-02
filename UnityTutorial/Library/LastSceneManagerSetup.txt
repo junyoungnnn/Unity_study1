@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Physics/Scences/Physics.unity
+- path: Assets/Instantiate/Scence/Instantiate Example.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
