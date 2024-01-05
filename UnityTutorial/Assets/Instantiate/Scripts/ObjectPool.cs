@@ -22,12 +22,13 @@ public class ObjectPool : MonoBehaviour
         {
             instance = this;
         }
+        unitList.Capacity = 20;
+        CreatePool();
     }
 
     private void Start()
     {
-        unitList.Capacity = 20;
-        CreatePool();
+        
     }
 
     public void CreatePool()
@@ -49,8 +50,12 @@ public class ObjectPool : MonoBehaviour
     }
     public GameObject GetObject()
     {
-        // 1. activeCount 변수의 값을 증가시킵니다.
-        activeCount = activeCount % unitList.Count;
+        // 1. activeCount 변수의 값이 unitList의 크기보다 크거나 같다면
+        if(activeCount >= unitList.Count)
+        {
+            // activeCount 변수의 값을 0으로 초기화합니다.
+            activeCount = 0;
+        }
 
         // 2. activeCount 인덱스로 접근한 게임 오브젝트가 비활성화되어 있는지 확인합니다.
         if (unitList[activeCount].activeSelf == false)
@@ -65,4 +70,9 @@ public class ObjectPool : MonoBehaviour
         }
         return null;
     }
+    public void InsertObject(GameObject prefab)
+    {
+        prefab.SetActive(false);       
+    }
+
 }

@@ -21,6 +21,8 @@ public abstract class Unit : MonoBehaviour
 
     [SerializeField] Animator animator;
 
+    [SerializeField] Vector3 originDirection;
+
     [SerializeField] Vector3 direction;
     [SerializeField] Vector3 targetDirection;
 
@@ -32,8 +34,6 @@ public abstract class Unit : MonoBehaviour
     [SerializeField] HPBar healthBar;
     [SerializeField] Sound sound = new Sound();
 
-    // 몬스터가 죽었을때 체력바가 남아있는 문제
-    // Release()는 어디서 호출되는가?
 
 
     private void Awake()
@@ -41,6 +41,13 @@ public abstract class Unit : MonoBehaviour
         target = GameObject.Find("Player");
         healthBar = GetComponent<HPBar>();
         animator = GetComponent<Animator>();
+    }
+
+    private void OnEnable()
+    {
+        state = State.Move;
+        originDirection = transform.position;
+
     }
 
     public void Update()
@@ -56,7 +63,7 @@ public abstract class Unit : MonoBehaviour
             case State.Die: Die();
                 break;
         }
-
+        //healthBar.UpdateHP(health, maxHealth);
     }
     public void OnHit(float damage)
     {
@@ -77,7 +84,8 @@ public abstract class Unit : MonoBehaviour
 
     public virtual void Release()
     {
-        Destroy(gameObject);
+        //Destroy(gameObject);
+        ObjectPool.instance.InsertObject(gameObject);
     }
 
     public virtual void Move()
@@ -144,5 +152,10 @@ public abstract class Unit : MonoBehaviour
         state = State.Move;
     }
 
-   
+    private void OnDisable()
+    {
+        transform.position = originDirection;
+        health = maxHealth;
+    }
+
 }
