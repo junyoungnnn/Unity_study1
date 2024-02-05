@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6554011785442558648}
   - component: {fileID: 1578246650948422587}
   - component: {fileID: 7712041096308154782}
-  - component: {fileID: 8904827071620933392}
+  - component: {fileID: 6098943104311408775}
   m_Layer: 0
   m_Name: Container
   m_TagString: Untagged
@@ -135,7 +135,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8904827071620933392
+--- !u!114 &6098943104311408775
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3294893236454364973}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc028d9c9e5f86f4081fc3bb36d23946, type: 3}
+  m_Script: {fileID: 11500000, guid: 9fae9d520ee00404cb28db71cd6e81f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   particle: {fileID: 8057099639078728303}
