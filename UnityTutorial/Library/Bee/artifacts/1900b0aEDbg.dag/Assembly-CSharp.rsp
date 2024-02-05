@@ -371,6 +371,7 @@
 "Assets/Instantiate/Scripts/Unit/Sorceress.cs"
 "Assets/Instantiate/Scripts/Unit/Unit.cs"
 "Assets/Instantiate/Scripts/Unit/Wizard.cs"
+"Assets/MouseExample/Scripts/SelectTable.cs"
 "Assets/Move/Scripts/PlayerController.cs"
 "Assets/Physics/Scripts/GameManager.cs"
 "Assets/Physics/Scripts/RedSphere.cs"
